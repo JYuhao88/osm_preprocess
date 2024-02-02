@@ -1,0 +1,64 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Address_OSM",
+            "type": "python",
+            "request": "launch",
+            "program": "osm_download.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--graph_load_mode",
+                "address",
+                "--dist",
+                "1000",
+                "--dist_type",
+                "bbox",
+                "--save_folder",
+                "./data",
+            ]
+        },
+        {
+            "name": "Bbox_OSM",
+            "type": "python",
+            "request": "launch",
+            "program": "osm_download.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--graph_load_mode",
+                "bbox",
+                "--bbox",
+                "22.5377,22.5193,113.9410,113.9174" , 
+                "--save_folder",
+                "./data"]
+        },
+        {
+            "name": "Point_OSM",
+            "type": "python",
+            "request": "launch",
+            "program": "osm_download.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+              "--graph_load_mode",
+              "point",
+              "--point",
+              "113.9416,22.547",
+              "--dist",
+              "1000",
+              "--dist_type",
+              "bbox",
+              "--network_type",
+              "walk",
+              "--save_folder",
+              "./data"
+            ],
+            "console": "integratedTerminal"
+          }
+    ]
+}

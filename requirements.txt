@@ -1,0 +1,2 @@
+geopandas>=0.14.3
+ogr2osm>=1.2.0
